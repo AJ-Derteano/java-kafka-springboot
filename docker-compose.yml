@@ -51,7 +51,7 @@ services:
       - kafka-network
 
   spring-app:
-    build: .
+    image: derteano/kafka-spring-app:1
     container_name: spring-boot-app
     depends_on:
       - kafka
